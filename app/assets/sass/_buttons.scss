@@ -1,0 +1,44 @@
+
+.btn:focus, .btn.focus, 
+.btn:active:focus, 
+.btn:active.focus, 
+.btn.active:focus, 
+.btn.active.focus {
+  outline: none;
+}
+
+.music-btn{
+	width: 100px; height: 100px;
+  border-radius: 50px;
+  font-size: 40px;
+  border:none;
+}
+
+.music-btn.playpause{
+	background-color: $lightBlue;
+}
+
+.music-btn.interrobang{
+	background-color: $yellow;
+}
+
+.music-btn.next{
+	background-color: $red;
+}
+
+.artist-info-btn{
+	background-color: transparent;
+	border-color: $darkBlue;
+	color: $darkBlue;
+	border-radius: 2px;
+	padding: 20px 10px;
+	text-transform: uppercase;
+}
+
+.artist-info-btn:hover,
+.artist-info-btn:active,
+.artist-info-btn.active,
+.artist-info-btn:focus{
+	background-color: $darkBlue;
+	color: $yellow;
+}

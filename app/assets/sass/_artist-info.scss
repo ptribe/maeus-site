@@ -1,0 +1,56 @@
+artist-info{
+	position: fixed;
+	width: 50%;
+  right: -50%;
+  top: 0;
+  bottom: 160px;
+	background-color: $yellow-fade;
+	transition: 0.2s transform ease-in-out;
+	opacity: 1;
+}
+
+artist-info.open{
+	transform: translate3d(-100%,0,0);
+
+	.album-cover{
+		  transform: translate3d(-400px,0,0);
+	}
+}
+
+.artist-panel{
+	height: 100%;
+	padding: 110px;
+	@include flex(row, center, center);
+	transform: translateZ(0);
+}
+
+.album-cover{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -240px;
+	transition: 0.4s transform ease-in-out;
+	opacity: 1;
+}
+
+.album-info{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px 15px;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+
+	h3, h4{
+		white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	}
+}
+
+.artist-content{}
+
+.artist-actions{
+	transform: translateZ(0);
+}

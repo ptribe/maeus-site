@@ -1,0 +1,19 @@
+
+.sky-bkgd{
+	background-image: url(../images/sky-bkgd.jpg); 
+}
+
+/*---------DISCOVER PAGE----------------*/
+.discover-page{
+	height: 100%;
+
+	@include flex(column, center, center);
+
+	
+}
+
+
+/*----------My Music Page-----------*/
+.my-music-page{
+	padding-top: 60px;
+}

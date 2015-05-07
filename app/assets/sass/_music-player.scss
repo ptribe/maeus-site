@@ -1,0 +1,62 @@
+/* minimal CSS to get started with component. feel free to override in main.css */
+audio-player .paused .play-text,
+audio-player .pause-text {
+    display:inline-block;
+}
+audio-player .play-text,
+audio-player .paused .pause-text {
+    display:none;
+}
+audio-player * {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+audio-player{
+	position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 160px;
+}
+
+.music-player{
+	height: 100%;
+	color: #fff;
+}
+
+.progress{
+	margin-bottom: 0;
+	box-shadow: none;
+	border-radius: 0;
+	background-color: $darkBlue-fade;
+}
+
+.progress-bar{
+	background-color: $red;
+	-webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.music-time{
+	height: 100%;
+	@include flex(row, center, flex-start);
+}
+
+.music-controls{
+	height: 140px;
+	background-color: $darkBlue;
+
+	.container, .row{
+		height: 100%;
+	}
+}
+
+.music-buttons{
+	height: 100%;
+	@include flex(row, center, space-around);
+}

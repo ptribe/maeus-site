@@ -1,0 +1,56 @@
+
+.nav-brand{}
+
+.nav-brand.white{
+	color: white;
+}
+
+.navigation{
+	position: fixed;
+	width: 320px;
+	padding: 20px 30px 50px;
+	z-index: 10;
+}
+
+.navigation.open{
+	background-color: $darkBlue;
+}
+
+.navigation.closed{
+	.menu{
+		display: none;
+	}
+}
+
+.brand-logo{
+	font-size: 33px;
+}
+
+.menu-btn{
+	margin-right: 20px;
+	cursor: pointer;
+	transition: .15s opacity ease-in-out;
+	font-size: 18px;
+}
+
+.menu-btn:hover{
+	opacity: 0.8;
+}
+
+.menu{
+	margin-top: 20px;
+}
+
+.menu li{
+	padding-bottom: 10px;
+}
+
+.menu li a{
+	font-size: 24px;
+	color: white;
+	transition: .1s all ease-in-out;
+}
+
+.menu li a:hover{
+	color: $red;
+}

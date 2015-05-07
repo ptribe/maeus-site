@@ -1,0 +1,37 @@
+[
+    {
+        "title": "SONG TITLE",
+        "artist": { "name": "ARTIST NAME"},
+        "album": "Latest album",
+        "image": "ALBUM COVER",
+        "file": "track1.mp3" 
+    },
+    {
+        "title": "SONG TITLE",
+        "artist": { "name": "ARTIST NAME"},
+        "album": "Latest album",
+        "image": "ALBUM COVER",
+        "file": "track2.mp3" 
+    },
+    {
+        "title": "SONG TITLE",
+        "artist": { "name": "ARTIST NAME"},
+        "album": "Latest album",
+        "image": "ALBUM COVER",
+        "file": "track3.mp3" 
+    },
+    {
+        "title": "SONG TITLE",
+        "artist": { "name": "ARTIST NAME"},
+        "album": "Latest album",
+        "image": "ALBUM COVER",
+        "file": "track4.mp3" 
+    },
+    {
+        "title": "SONG TITLE",
+        "artist": { "name": "ARTIST NAME"},
+        "album": "Latest album",
+        "image": "ALBUM COVER",
+        "file": "track5.mp3" 
+    }
+]

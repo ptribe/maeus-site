@@ -1,0 +1,20 @@
+/*--------SETUP-----------*/
+html, body{
+	height: 100%;
+}
+
+.bkgd{
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.template-injection{
+	height: 100%;
+}
+

@@ -1,0 +1,29 @@
+
+@mixin flex($direction, $align1, $align2){
+
+	box-sizing: border-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+	-webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+
+	-webkit-align-items: $align1;
+  -ms-flex-align: $align1;
+  align-items: $align1;
+
+  -webkit-justify-content: $align2;
+  -ms-flex-pack: $align2;
+  justify-content: $align2;
+
+	-webkit-box-flex: 1 1 0%;
+  -webkit-flex: 1 1 0%;
+  -moz-box-flex: 1 1 0%;
+  -moz-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+
+}
