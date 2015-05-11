@@ -1,37 +1,42 @@
 [
     {
-        "title": "SONG TITLE",
-        "artist": { "name": "ARTIST NAME"},
-        "album": "Latest album",
-        "image": "ALBUM COVER",
-        "file": "track1.mp3" 
+        "title": "Little Maggie",
+        "artist": { "name": "Robert Plant"},
+        "album": "Lullaby and the Ceaseless Roar",
+        "image": "/app/assets/images/album-cover-example.png",
+        "file": "track1.mp3",
+        "description": "I have hinted that I would often pull poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive."
     },
     {
-        "title": "SONG TITLE",
-        "artist": { "name": "ARTIST NAME"},
-        "album": "Latest album",
-        "image": "ALBUM COVER",
-        "file": "track2.mp3" 
+        "title": "Rainbow",
+        "artist": { "name": "Robert Plant"},
+        "album": "Lullaby and the Ceaseless Roar",
+        "image": "/app/assets/images/album-cover-example.png",
+        "file": "track2.mp3",
+        "description": "I have hinted that I would often pull poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive."
     },
     {
-        "title": "SONG TITLE",
-        "artist": { "name": "ARTIST NAME"},
-        "album": "Latest album",
-        "image": "ALBUM COVER",
-        "file": "track3.mp3" 
+        "title": "Pocketful of Golden",
+        "artist": { "name": "Robert Plant"},
+        "album": "Lullaby and the Ceaseless Roar",
+        "image": "/app/assets/images/album-cover-example.png",
+        "file": "track3.mp3",
+        "description": "I have hinted that I would often pull poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive."
     },
     {
-        "title": "SONG TITLE",
-        "artist": { "name": "ARTIST NAME"},
-        "album": "Latest album",
-        "image": "ALBUM COVER",
-        "file": "track4.mp3" 
+        "title": "Embrace Another Fall",
+        "artist": { "name": "Robert Plant"},
+        "album": "Lullaby and the Ceaseless Roar",
+        "image": "/app/assets/images/album-cover-example.png",
+        "file": "track4.mp3",
+        "description": "I have hinted that I would often pull poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive."
     },
     {
-        "title": "SONG TITLE",
-        "artist": { "name": "ARTIST NAME"},
-        "album": "Latest album",
-        "image": "ALBUM COVER",
-        "file": "track5.mp3" 
+        "title": "Turn it Up",
+        "artist": { "name": "Robert Plant"},
+        "album": "Lullaby and the Ceaseless Roar",
+        "image": "/app/assets/images/album-cover-example.png",
+        "file": "track5.mp3",
+        "description": "I have hinted that I would often pull poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive."
     }
 ]

@@ -1,15 +1,15 @@
 <div class="artist-panel" >
 	<div class="album-cover">
-		<img src="/app/assets/images/album-cover-example.png" class="img-responsive">
+		<img ng-src="{{$parent.info.image}}" class="img-responsive">
 		<div class="album-info">
 			<h3>{{$parent.info.title}}</h3>
-			<h4>Latest Album</h4>
+			<h4>{{$parent.info.album}}</h4>
 		</div>
 	</div>
 	<div class="artist-content">
 		<h2>{{$parent.info.artist.name}}</h2>
 		<p>
-			I have hinted that I would often pull poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive.
+			{{$parent.info.description}}
 		</p>
 		<div class="artist-actions row">
 			<div class="col-sm-6">
