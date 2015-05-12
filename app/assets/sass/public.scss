@@ -1,0 +1,56 @@
+
+/*------------HOME-------------*/
+.home-bkgd{
+	background-image: url(../images/bkgd.jpg); 
+}
+
+.home-page{
+	height: 100%;
+	text-align: center;
+	color: white;
+	@include flex(row, center, center);
+}
+
+.brand-logo-hero{ 
+	font-size: 12em;
+	color: rgba(255,255,255,0.4); 
+}
+
+.home-page h1{ 
+	font-size: 44px;
+	color: rgba(255,255,255,0.7); 
+}
+
+/*------------AUTH-------------*/
+.auth-view{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $darkBlue;
+	color: white;
+	z-index: 1031;
+	overflow: scroll;
+}
+
+.auth-view > div{
+	height: 100%;
+	padding: 100px 0 0;
+	@include flex(row, flex-start, center);
+}
+
+.auth-change{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.listener-join{}
+.login{}
+.artist-join{}
+.license-agreement{}
+
+.agreement-list li{
+	margin-bottom: 15px;
+}

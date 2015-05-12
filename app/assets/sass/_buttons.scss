@@ -1,10 +1,69 @@
 
+.btn{
+	border-radius: 2px;
+	font-weight: 300;
+}
+
 .btn:focus, .btn.focus, 
 .btn:active:focus, 
 .btn:active.focus, 
 .btn.active:focus, 
 .btn.active.focus {
   outline: none;
+}
+
+// .btn-default.disabled, 
+// .btn-default.disabled:hover, 
+// .btn-default.disabled:focus, 
+// .btn-default.disabled.focus, 
+// .btn-default.disabled:active, 
+// .btn-default.disabled.active, 
+// .btn-default[disabled], 
+// .btn-default[disabled]:hover, 
+// .btn-default[disabled]:focus, 
+// .btn-default[disabled].focus, 
+// .btn-default[disabled]:active, 
+// .btn-default[disabled].active, 
+// fieldset[disabled] .btn-default, 
+// fieldset[disabled] .btn-default:hover, 
+// fieldset[disabled] .btn-default:focus, 
+// fieldset[disabled] .btn-default.focus, 
+// fieldset[disabled] .btn-default:active, 
+// fieldset[disabled] .btn-default.active{
+// 	background-color: transparent;
+// 	border-color: transparent;
+// }
+
+.btn-primary{
+	background-color: $lightBlue;
+	border: none;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary.focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: $lightBlue-hover;
+  border-color: none;
+}
+
+.btn-attn{
+	background-color: $red;
+	border: none;
+}
+
+.btn-attn:hover, 
+.btn-attn:focus, 
+.btn-attn.focus, 
+.btn-attn:active, 
+.btn-attn.active, 
+.open > .btn-attn.dropdown-toggle {
+  color: #fff;
+  background-color: $red-hover;
+  border-color: none;
 }
 
 .music-btn{
@@ -14,16 +73,54 @@
   border:none;
 }
 
+.music-btn,
+.music-btn span{
+	@include flex(row, center, center);
+  -webkit-box-flex: initial;
+  -webkit-flex: initial;
+  -moz-box-flex: initial;
+  -moz-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
+}
+
 .music-btn.playpause{
 	background-color: $lightBlue;
 }
+
+// .playpause .play-text{
+	
+// }
 
 .music-btn.interrobang{
 	background-color: $yellow;
 }
 
-.music-btn.next{
+.music-btn.next,
+.music-btn.prev{
 	background-color: $red;
+}
+
+.music-btn.next.btn-default[disabled], 
+.music-btn.next.btn-default[disabled]:hover,
+.music-btn.prev.btn-default[disabled], 
+.music-btn.prev.btn-default[disabled]:hover{
+	background-color: $red;
+}
+
+.btn-order{
+	background-color: transparent;
+	font-size: 20px;
+}
+
+.btn-order:hover,
+.btn-order:focus{
+	color: $red
+}
+
+.btn-order:active,
+.btn-order.active{
+	color: $yellow;
 }
 
 .artist-info-btn{
@@ -42,3 +139,81 @@
 	background-color: $darkBlue;
 	color: $yellow;
 }
+
+.share-btn{
+	background-color: transparent;
+	border-color: $darkBlue;
+	color: $darkBlue;
+	border-radius: 2px;
+	padding: 10px 10px;
+	text-transform: uppercase;
+}
+
+.share-btn:hover,
+.share-btn:active,
+.share-btn.active,
+.share-btn:focus{
+	background-color: $darkBlue;
+	color: white;
+}
+
+.music-tag-view-btn.top-right{
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+
+.music-tag-view-btn{
+	background-color: transparent;
+	border-color: transparent;
+	color: white;
+	border-radius: 2px;
+	padding: 10px 10px;
+	transition: .2s opacity ease-in-out;
+}
+
+.music-tag-view-btn:hover,
+.music-tag-view-btn:focus{
+	color: white;
+	opacity: 0.6;
+}
+
+.music-tag-btn{
+	background-color: $lightBlue;
+	border-color: transparent;
+	color: white;
+	border-radius: 2px;
+	padding: 10px 10px;
+}
+
+.music-tag-btn:hover,
+.music-tag-btn:focus{
+	background-color: $lightBlue-hover;
+	color: white;
+}
+
+.music-tag-btn:active,
+.music-tag-btn.active{
+	background-color: $red;
+}
+
+.auth-change-btn{
+	background-color: transparent;
+	border-color: $yellow;
+	color: white;
+	border-radius: 2px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+
+.auth-change-btn:hover,
+.auth-change-btn:active,
+.auth-change-btn.active,
+.auth-change-btn:focus{
+	background-color: $yellow;
+	color: $darkBlue;
+}
+
+
+
+

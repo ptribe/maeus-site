@@ -1,0 +1,79 @@
+<nav class="navigation closed" ng-controller="navCtrl">
+  <div class="nav-box" ng-class="toggle ? 'open' : 'closed'">
+    <div class="nav-brand black">
+      <span class="menu-btn" ng-click="toggle = !toggle"><i class="icon-Menu"></i></span>
+      <span class="brand-logo"><i class="icon-Maeus-logo"></i></span>
+    </div>
+    <ul class="menu">
+      <li>
+      	<div class="maeus-icon discover-minicon"><i class="icon-Play"></i></div>
+      	<a href="#/discover">Discover</a>
+      </li>
+      <li>
+      	<div class="maeus-icon account-minicon"><i class="icon-Account"></i></div>
+      	<a href="#/account">Account</a>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-bkgd" ng-click="toggle = !toggle" ng-class="toggle ? 'open' : 'closed' "></div>
+</nav>
+
+<section class="my-music-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h2>
+					<div class="maeus-icon my-music-minicon"><i class="icon-Interrobang"></i></div>
+					My Music
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+
+				<table class="table table-striped table-hover my-music-table">
+					<thead>
+						<tr>
+							<th></th>
+							<th></th>
+							<th>Track</th>
+							<th>Artist</th>
+							<th>Album</th>
+							<th>Time</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="active">
+							<td><i class="icon-Stop"></i></td>
+							<td><i class="icon-Check"></i></td>
+							<td>Oh Baby, baby</td>
+							<td><a href="#/artist-details" target="_blank">Local Philly Band</a></td>
+							<td>Latest Album</td>
+							<td>5:32</td>
+						</tr>
+						<tr>
+							<td><i class="icon-Play"></i></td>
+							<td><i class="icon-X"></i></td>
+							<td>Oh Baby, baby</td>
+							<td><a href="#/artist-details" target="_blank">Local Philly Band</a></td>
+							<td>Latest Album</td>
+							<td>5:32</td>
+						</tr>
+						<tr>
+							<td><i class="icon-Play"></i></td>
+							<td><i class="icon-Check"></i></td>
+							<td>Oh Baby, baby</td>
+							<td><a href="#/artist-details" target="_blank">Local Philly Band</a></td>
+							<td>Latest Album</td>
+							<td>5:32</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<audio-player ng-controller="MusicCtrl" class="my-music-player"></artist-info> </audio-player>
+

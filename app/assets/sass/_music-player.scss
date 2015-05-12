@@ -1,7 +1,7 @@
 /* minimal CSS to get started with component. feel free to override in main.css */
 audio-player .paused .play-text,
 audio-player .pause-text {
-    display:inline-block;
+    display: flex;
 }
 audio-player .play-text,
 audio-player .paused .pause-text {
@@ -60,3 +60,23 @@ audio-player{
 	height: 100%;
 	@include flex(row, center, space-around);
 }
+
+.music-order-buttons{
+	height: 100%;
+	@include flex(row, center, flex-end);
+}
+
+//Hide/Show buttons on differrent pages
+.discover-player{
+	.prev{ display: none; }
+	.interrobang{ display: flex; }
+	.music-order-buttons{ display: none; }
+}
+
+.my-music-player{
+	.prev{ display: flex; }
+	.interrobang{ display: none; }
+	.music-order-buttons{ display: flex; }
+}
+
+

@@ -16,18 +16,6 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  
-  <nav class="navigation closed" ng-controller="navCtrl" ng-class="toggle ? 'open' : 'closed'">
-    <div class="nav-brand white">
-      <span class="menu-btn" ng-click="toggle = !toggle"><i class="icon-Menu"></i></span>
-      <span class="brand-logo"><i class="icon-Maeus-logo"></i></span>
-    </div>
-    <ul class="menu">
-      <li><a href="#/view1">Discover</a></li>
-      <li><a href="#/view2">My Music</a></li>
-      <li><a href="#/view3">Account</a></li>
-    </ul>
-  </nav>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -36,7 +24,6 @@
   
   <div class="template-injection" ng-view></div>
   
-  <audio-player ng-controller="MusicCtrl"> <artist-info  ng-class="$parent.showArtist ? 'open' : 'closed'"></artist-info> </audio-player>
 
   
 
@@ -49,9 +36,11 @@
   <script src="assets/js/services/song.js"></script>
   <script src="assets/js/controllers/musicPlayer.js"></script>
   <script src="assets/js/controllers/artistInfo.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="view3/view3.js"></script>
+  <script src="view1/discover.js"></script>
+  <script src="view2/my-music.js"></script>
+  <script src="view3/account.js"></script>
+  <script src="view4/artist-details.js"></script>
+  <script src="view5/home.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

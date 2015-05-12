@@ -1,6 +1,47 @@
 
+$page-top-padding: 80px;
+
 .sky-bkgd{
 	background-image: url(../images/sky-bkgd.jpg); 
+}
+
+/*---------MUSIC TAG VIEW--------------*/
+
+.music-tag-view{
+	position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $darkBlue;
+  color: white;
+  z-index: 20;
+  overflow: scroll;
+  @include flex(row, center, center);
+  transition: 0.2s transform ease-in-out;
+}
+
+.music-tag-view.open{
+	transform: translate3d(0,0,0);
+}
+
+.music-tag-view.closed{
+	transform: translate3d(0,-100%,0);
+}
+
+.city-select{
+	background-color: $lightBlue;
+	color: white;
+}
+
+.music-tags{}
+
+.music-tags-row{
+	@include flex(row, center, space-between);
+}
+
+.music-tags-row .music-tag-btn {
+  margin: 3px;
 }
 
 /*---------DISCOVER PAGE----------------*/
@@ -8,12 +49,58 @@
 	height: 100%;
 
 	@include flex(column, center, center);
+}
 
-	
+.song-info{
+	color: $darkBlue;
 }
 
 
 /*----------My Music Page-----------*/
 .my-music-page{
-	padding-top: 60px;
+	padding-top: $page-top-padding;
+}
+
+.my-music-table{}
+
+table a{
+	color: $offBlack;
+}
+
+table.table-striped tr.active,
+table.table-striped tr.active td{
+	background-color: $yellow;
+}
+
+table.table-hover tr td i{
+	display: none;
+	cursor: pointer;
+}
+
+table.table-hover tr.active td i,
+table.table-hover tr:hover td i{
+	display: initial;
+}
+
+
+/*----------Account Page-----------*/
+.account-page{
+	height: 100%;
+	padding-top: $page-top-padding;
+	background-color: $darkBlue;
+	color: white;
+}
+
+/*----------Artist Page-----------*/
+.artist-bkgd{
+	height: 480px;
+	background-color: $offBlack;
+}
+
+.artist-details-page{
+	padding-bottom: 40px;
+}
+
+.artist-details-page .share-btn{
+	margin-top: 20px;
 }

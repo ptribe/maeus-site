@@ -1,0 +1,85 @@
+<nav class="navigation closed" ng-controller="navCtrl">
+  <div class="nav-box" ng-class="toggle ? 'open' : 'closed'">
+    <div class="nav-brand white">
+      <span class="menu-btn" ng-click="toggle = !toggle"><i class="icon-Menu"></i></span>
+      <span class="brand-logo"><i class="icon-Maeus-logo"></i></span>
+    </div>
+    <ul class="menu">
+      <li>
+        <div class="maeus-icon my-music-minicon"><i class="icon-Interrobang"></i></div>
+        <a href="#/my-music">My Music</a>
+      </li>
+      <li>
+        <div class="maeus-icon account-minicon"><i class="icon-Account"></i></div>
+        <a href="#/account">Account</a>
+      </li>
+      <!-- <li class="music-tag"><button ng-click="tagsView = !tagsView" class="btn btn-block music-tag-btn">Funky</button></li> -->
+    </ul>
+  </div>
+  <div class="nav-bkgd" ng-click="toggle = !toggle" ng-class="toggle ? 'open' : 'closed' "></div>
+</nav>
+
+<button class="btn music-tag-view-btn top-right" ng-click="tagsView = !tagsView">
+  <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+</button>
+
+<div class="music-tag-view" ng-class="tagsView ? 'open' : 'closed'">
+  <div class="container">
+    <div class="row base-drop">
+      <div class="col-sm-8 col-sm-offset-1 col-md-6 col-md-offset-3">
+        <form>
+          <div class="form-group">
+            <label>Enter Your Location</label>
+            <select class="form-control city-select">
+              <option>Philadelphia</option>
+              <option>New York</option>
+              <option>Washington D.C.</option>
+              <option>Los Angeles</option>
+              <option>San Francisco</option>
+              <option>Austin</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row base-drop">
+      <div class="col-sm-8 col-sm-offset-1 col-md-6 col-md-offset-3">
+        <label>Select tags to describe the music you are looking for</label>
+        <div class="music-tags">
+          <div class="music-tags-row">
+            <button class="btn btn-block music-tag-btn">Funky</button>
+            <button class="btn btn-block music-tag-btn">Rythm</button>
+            <button class="btn btn-block music-tag-btn">Organic</button>
+          </div>
+          <div class="music-tags-row">
+            <button class="btn btn-block music-tag-btn">Strange</button>
+            <button class="btn btn-block music-tag-btn">Melancholy</button>
+            <button class="btn btn-block music-tag-btn">Soft</button>
+          </div>
+          <div class="music-tags-row">
+            <button class="btn btn-block music-tag-btn">Aggressive</button>
+            <button class="btn btn-block music-tag-btn">Bright</button>
+            <button class="btn btn-block music-tag-btn">Soulful</button>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="row base-top-3">
+      <div class="col-sm-8 col-sm-offset-1 col-md-6 col-md-offset-3">
+        <button ng-click="tagsView = !tagsView" class="btn btn-attn btn-block btn-lg">DONE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bkgd sky-bkgd">
+	<div class="discover-page">
+	  
+		<div class="song-info">
+			<h3><span class="light">SONG</span> 1223 <span class="light">ARTIST</span> 282</h3>
+		</div>
+		
+	</div>
+</div>
+
+<audio-player ng-controller="MusicCtrl" class="discover-player"> <artist-info  ng-class="$parent.showArtist ? 'open' : 'closed'"></artist-info> </audio-player>
