@@ -1,0 +1,54 @@
+$page-top-padding: 100px;
+
+/*------------ARTIST DASH----------*/
+.artist-dash-page{
+	padding-top: $page-top-padding;
+}
+
+.project-row{
+	padding: 10px 0;
+	@include flex(row, center, center);
+}
+
+.project-row:hover{
+	opacity: 0.7;
+}
+
+.artist-thumb{
+	width: 100%;
+	background-color: $lightGray;
+	@include aspect-ratio(1,1);
+	font-size:  2em;
+	color: $gray;
+}
+
+.content{
+	@include flex(row, center, center);
+}
+
+.artist-thumb-bkgd{
+	height: 100%;
+  width: 100%;
+  background-attachment: initial;
+}
+
+
+/*------------ARTIST EDIT----------*/
+.artist-edit-page{
+	padding-bottom: $page-top-padding;
+}
+
+.edit-tour-schedule{}
+
+.edit-tour-schedule .form-control {
+  height: 34px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.add-album-row{
+	padding: 20px 0;
+	border-top: 3px solid $gray;
+}
+
+

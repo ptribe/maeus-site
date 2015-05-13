@@ -8,6 +8,8 @@ var myApp = angular.module('myApp', [
   'myApp.my-music',
   'myApp.account',
   'myApp.artist-details',
+  'myApp.artist-dash',
+  'myApp.artist-edit',
   'myApp.version',
   'audioPlayer-directive',
   'artistInfo-directive'
