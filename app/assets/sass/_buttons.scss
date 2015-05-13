@@ -94,7 +94,20 @@
 
 .music-btn.interrobang{
 	background-color: $yellow;
+	transition: 0.2s transform ease-in-out;
 }
+
+.music-btn.interrobang.open{
+	transform: translate3d(0,-50%,0);
+}
+
+.interrobang.closed .icon-Interrobang{ display: inline-block; }
+
+.interrobang.closed .icon-Caret{ display: none; }
+
+.interrobang.open .icon-Interrobang{ display: none; }
+
+.interrobang.open .icon-Caret{ display: inline-block; }
 
 .music-btn.next,
 .music-btn.prev{

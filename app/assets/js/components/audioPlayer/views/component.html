@@ -17,7 +17,10 @@
 				    <span class="play-text"><i class="icon-Play"></i></span>
 				    <span class="pause-text"><i class="icon-Stop"></i></span>
 					</button>
-					<button class="btn btn-default music-btn interrobang" ng-click="interrobang()"><i class="icon-Interrobang"></i></button>
+					<button class="btn btn-default music-btn interrobang" ng-click="interrobang()" ng-class="showArtist ? 'open' : 'closed'">
+						<i class="icon-Interrobang"></i>
+						<i class="icon-Caret"></i>
+					</button>
 					<button ng-disabled="currentNum >= (totalNum-1)" class="btn btn-default music-btn next" ng-click="next()"><i class="icon-Skip"></i></button>
 					<span></span>
 				</div>
